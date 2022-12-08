@@ -1,0 +1,91 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Nutrient Counselling & Diet Planner</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--<link rel="stylesheet" type="text/css" href="{% static 'mainapp/fontawesome.min.css' %}">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'mainapp/css/nav2.css' %}"/>
+    <!--<link rel="stylesheet" href="{% static 'mainapp/css/nav.css' %}"/>  -->
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+</head>
+
+<body style="background:url({% static 'mainapp/imgs/image.jpg' %});background-size: cover;" class="bga">
+<header>
+    <div class="container">
+        <img src="{% static 'mainapp/imgs/logo.png' %}" alt="NCDP." width="130" height="130" class="logo">
+        <nav>
+            <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'food' %}">Food</a></li>
+            <li><a href="{% url 'nutrition' %}">Nutrition</a></li>
+            <li><a href="{% url 'experts' %}">Experts</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>   
+</header>
+<div style="height: 50px;"></div>
+<div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-4">
+        <!-- <h1>Nutritions Details</h1> -->
+        <div class="heading"><h2 align ="center" class="titleText"><span>N</span>utritions <span>D</span>etails</h2></div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<div style="height: 170px;"></div>
+<h1> {{query}}</h1>
+    
+
+
+            <div class="card text-center">
+              <!--<div class="card-header">
+                Details
+              </div> -->
+              <div class="card-body">
+                <h5 class="card-title">Search results</h5>
+                {{data|safe}}
+              </div>
+              <div class="card-footer text-muted">
+              </div>
+              <div><a href="{% url 'faqpage_' %}" class="btn">For details Click here </a>
+              </div>
+              
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+        window.addEventListener('scroll', funtion(){ 
+        const header = document.querySelector('header');
+        header.classlist.toggle("sticky", window.scrollY > 0);
+     });
+    
+</script>
+    
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>

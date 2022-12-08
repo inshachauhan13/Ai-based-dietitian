@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css? family=poppins:200,300,400,500,600,700,800,900&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+p
+{
+  font-weight: 300;
+  color: #111;
+}
+body
+{
+    min-height: 1000px;
+}
+.banner
+{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-size: cover;
+  
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+    transition: 1s;
+}
+.banner .content h2
+{
+    font-size: 5em;
+    color: #25383c;
+    transition: 1s;
+}
+
+.banner .content p
+{
+    font-size: 1em;
+    color: #808080;
+}
+
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #728c00;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 1s;
+    border-radius: 30px;
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #728c00 ;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float:left;
+}
+
+nav{
+    float: right;
+}
+/*
+nav.black{
+    background: yellow;
+}
+*/
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 55px;
+    
+    position: relative;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #000;
+} 
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 350ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+section
+{ 
+  padding: 100px;
+}
+
+.row
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.row.col50
+{
+	position: relative;
+	width: 48%;
+}
+.titleText
+{
+	color: #111;
+	font-size: 2em;
+	font-weight: 300;
+}
+.titleText span
+{
+	color: #ff0157;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+.row .col50 .imgBx
+{  
+    position: relative;
+	width: 100%;
+	/*min-height: 300px;*/
+	height: 100%;
+}
+/*
+.row .col50 .imgBx img
+{
+	position: relative;
+	top: 0;
+	Left: 0;
+	width: 200%;
+	height: 200%;
+	object-fit: cover;
+}
+*/
+body{ 
+    background: #f6f6f6;
+}
+.box{
+	width: 1000px;
+	margin: 100px auto;
+	background: #fff;
+	border-radius: 7px;
+	box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+}
+.box .heading{
+	background: #808000;
+	border-radius: 7px 7px 8px 8px;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+	font-family: "Rubik";
+}
+.faqs{
+	padding: 0px 20px 20px;
+}
+::-webkit -details-marker{
+	float: right;
+	margin-top: 1px;
+}
+details{
+    background: #f6f6f6;
+	padding: 10px 20px;	
+	border-radius: 7px;
+	margin-top: 20px;
+	font-family: "Rubik";
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+details summary{
+	outline: none;
+}
+
+
+
+
+input {
+  color: #171717;
+}
+.search-bar {
+  display: flex;
+}
+
+.search-bar input,
+.search-btn, 
+.search-btn:before, 
+.search-btn:after {
+  transition: all 0.25s ease-out;
+}
+.search-bar input,
+.search-btn {
+  width: 3em;
+  height: 3em;
+}
+
+
+.search-bar {
+  margin: auto;
+  padding: 1.5em;
+  justify-content: center;
+  max-width: 30em;
+}
+.search-bar input {
+  background: black;
+  border-radius: 1.5em;
+  box-shadow: 0 0 0 0.4em #171717 inset;
+  padding: 0.75em;
+  transform: translate(0.5em,0.5em) scale(0.5);
+  transform-origin: 100% 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.search-bar input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.search-bar input:focus,
+.search-bar input:valid {
+  background: #fff;
+  border-radius: 0.375em 0 0 0.375em;
+  box-shadow: 0 0 0 0.1em #d9d9d9 inset;
+  transform: scale(1);
+}
+.search-btn {
+  background: #171717;
+  border-radius: 0 0.75em 0.75em 0 / 0 1.5em 1.5em 0;
+  padding: 0.75em;
+  position: relative;
+  transform: translate(0.25em,0.25em) rotate(45deg) scale(0.25,0.125);
+  transform-origin: 0 50%;
+}
+.search-btn:before, 
+.search-btn:after {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+}
+.search-btn:before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.2em #f1f1f1 inset;
+  top: 0.75em;
+  left: 0.75em;
+  width: 1.2em;
+  height: 1.2em;
+}
+.search-btn:after {
+  background: #f1f1f1;
+  border-radius: 0 0.25em 0.25em 0;
+  top: 51%;
+  left: 51%;
+  width: 0.75em;
+  height: 0.25em;
+  transform: translate(0.2em,0) rotate(45deg);
+  transform-origin: 0 50%;
+}
+.search-btn span {
+  display: inline-block;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+/* Active state */
+.search-bar input:focus + .search-btn,
+.search-bar input:valid + .search-btn {
+  background: #2762f3;
+  border-radius: 0 0.375em 0.375em 0;
+  transform: scale(1);
+}
+.search-bar input:focus + .search-btn:before, 
+.search-bar input:focus + .search-btn:after,
+.search-bar input:valid + .search-btn:before, 
+.search-bar input:valid + .search-btn:after {
+  opacity: 1;
+}
+.search-bar input:focus + .search-btn:hover,
+.search-bar input:valid + .search-btn:hover,
+.search-bar input:valid:not(:focus) + .search-btn:focus {
+  background: #0c48db;
+}
+.search-bar input:focus + .search-btn:active,
+.search-bar input:valid + .search-btn:active {
+  transform: translateY(1px);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  input {
+    color: black;
+  }
+
+  .search-bar input {
+    box-shadow: 0 0 0 0.4em #f1f1f1 inset;
+  }
+  .search-bar input:focus,
+  .search-bar input:valid {
+    background: #3d3d3d;
+    box-shadow: 0 0 0 0.1em #3d3d3d inset;
+  }
+  .search-btn {
+    background: black;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+ small {
+     font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .bold-text {
+     color: #989c9e !important
+ }
+
+ .mt-55 {
+     margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ h3 {
+     font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .social {
+     font-size: 21px !important
+ }
+
+ .rights {
+     font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+ }

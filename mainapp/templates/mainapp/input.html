@@ -1,0 +1,72 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Nutrient Counselling & Diet Planner</title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/nav.css' %}"/>
+</head>
+
+<body style="background:url({% static 'mainapp/imgs/image.jpg' %});background-size: cover;" class="bga">
+    
+    
+<header>
+    <div class="container">
+        <img src="{% static 'mainapp/imgs/logo.png' %}" alt="NCDP." width="130" height="130" class="logo">  
+        <nav>
+            <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'food' %}">Food</a></li>
+            <li><a href="{% url 'nutrition' %}">Nutrition</a></li>
+            <li><a href="{% url 'experts' %}">Experts</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>   
+</header>
+    
+<div class="input" style="margin-top:170px;"><h1> Personal Information </h1></div>
+    <div class="mane">
+    <form action="{% url 'process' %}" method="get" class="">
+           <div id="name">
+               <h2 class="name2">Name</h2>
+               <input style="width: 72%" class="Full_name" type="text" name="name" id = "name" placeholder="Full Name" required><br>
+           </div> 
+            
+            <h2 class="name2" >Age</h2>
+            <input style="width: 72%" class="age" type="number" id = "age" name="age" min=1 oninput="validity.valid||(value='');" placeholder="123...." required>
+            
+            <h2 class="name2">Weight (kg)</h2>
+            <input style="width: 72%" class="mass" type="number" id = "weight" name="weight" placeholder="70.12" step="0.01" required>
+
+            <h2 class="name2">Height (meters)</h2>
+            <input style="width: 72%" class="height" type="number" id="height" name="height" placeholder="1.23" step="0.01" required> 
+
+            <h2 class="name2">Gender (M/F)</h2>
+            <input style="width: 72%" class="height" type="string" id="gender" name="gender" pattern="[M/F]{1}" placeholder="M / F"> 
+            
+            <h2 class="name2">Activity Level</h2>
+            <input style="width: 72%" class="height" type="number" id="a_l" name="a_l" pattern="[1/2/3/4/5]{1}" placeholder="1.Sedentary 2.lightly active 3.Moderately active 4.Active 5.Extra Active" required>
+
+
+            <h2 class="name2">Choose Disease </h2>
+
+            <select id = "disease" name="disease" style="width: 72% ; margin-top:14px;" class="height">
+              <option value="None">None</option>
+              <option value="Diabetes">Diabetes</option>
+              <option value="Blood">Blood Pressure</option>
+              <option value="Uric">Uric Acid</option>
+              <option value="Asthama">Asthama</option>
+  	          <option value="Heart">Heart Disease</option>
+
+            </select> 
+
+            <br> <a href=bmi><button type="submit" class="btn">Calculate</button></a>
+            
+    </form>
+</div>
+
+</body>
+

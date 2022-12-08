@@ -1,0 +1,93 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--<link rel="stylesheet" type="text/css" href="{% static 'mainapp/fontawesome.min.css' %}">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Nutrient Counselling & Diet Planner</title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'mainapp/css/nav.css' %}"/>
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+</head>
+
+    
+<body>
+    
+<header>
+    <div class="container">
+        <img src="{% static 'mainapp/imgs/logo.png' %}" alt="NCDP." width="130" height="130" class="logo">
+        
+        <nav>
+            <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'food' %}">Food</a></li>
+            <li><a href="{% url 'nutrition' %}">Nutrition</a></li>
+            <li><a href="{% url 'experts' %}">Experts</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>   
+</header>
+<body>
+<section class="menu" id="menu">
+    <div class="title">
+            <h2 class="titleText"><span>O</span>ur <span>D</span>ietitian <span>E</span>xpert</h2>
+            <p>A dietitian (or dietician) is an expert in dietetics; that is, human nutrition and the regulation of diet. A dietitian alters their patient's nutrition based upon their medical condition and individual needs. Dietitians are regulated healthcare professionals licensed to assess, diagnose, and treat nutritional problems.</p>
+    </div>
+    <div class="content">
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/expert2.jpeg' %}">
+            </div>
+            <div class="text">
+                <h3>Hina Anis</h3><br>
+                <p>Nutrition & Wellness Expert <br> Cosmetologist <br> Deititian<br>Founder of HN Wellness <br></p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/expert1.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Dr Saad Qasim</h3><br>
+                <p> Assistant Professor <br> PhD (Neuromorphic Hradware Design)from NEDUET <br> M.Engg(Computer Systems) from NEDUET <br> B.E (Computer Systems) from NEDUET </p>
+                 </div>
+        </div>
+    <!-- <section class="expert" id="expert">
+        <div class="title">
+            <h2 class="titleText"><span>O</span>ur <span>D</span>ietitian <span>E</span>xpert</h2>
+            <p>A dietitian (or dietician) is an expert in dietetics; that is, human nutrition and the regulation of diet. A dietitian alters their patient's nutrition based upon their medical condition and individual needs. Dietitians are regulated healthcare professionals licensed to assess, diagnose, and treat nutritional problems.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="{% static 'mainapp/imgs/expert1.jpg' %}">
+                </div>
+                <div class="text">
+                    <h3>Dr Saad Qasim Khan</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="{% static 'mainapp/imgs/expert2.jpeg' %}">
+                </div>
+                <div class="text">
+                    <h3>Hina Anis</h3>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+    
+    
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>

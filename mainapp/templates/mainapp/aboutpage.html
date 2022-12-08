@@ -1,0 +1,119 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Nutrient Counselling & Diet Planner</title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'mainapp/css/nav.css' %}"/>
+    
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+</head>
+
+    
+<body>
+    
+<header>
+    <div class="container">
+        <img src="{% static 'mainapp/imgs/logo.png' %}" alt="NCDP." width="130" height="130" class="logo">
+        
+        <nav>
+            <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'food' %}">Food</a></li>
+            <li><a href="{% url 'nutrition' %}">Nutrition</a></li>
+            <li><a href="{% url 'experts' %}">Experts</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>   
+</header>
+    
+<section class="about" id="about">
+    <div class="title">
+        <h2 class="titleText"><span>A</span>bout <span>U</span>s</h2>
+        <p>“Nutrients Counseling and Diet planner using Machine Learning Algorithm” helps people to evaluate their wellness and fitness conditions and accordingly provides them with nutrition and diet advises. The general idea of the nutrition expert system is asking users many questions related to age, weight, height, gender and disease, and accordingly advise them. This system provides a customized diet plan for individuals, using the technique of artificial intelligence.You will get access to all the facilities via this application, which is actually provided by a human dietitian. The main advantage of using this standalone application is that the time required by the people to travel to the dietitian will be reduced and also it reduces the cost of hiring dietitians for some particular purpose. Also, this application offers a unique diet plan for a particular individual.</p>
+    </div>
+    <div class="wrapper">
+        <video width="950" height="600" autoplay loop muted>
+          <source src="{% static 'mainapp/Videos/video4.mp4' %}" type="video/mp4">
+        </video>
+    </div>
+    <div class="heading"><h3 class="titleText"><span>O</span>ur <span>T</span>eam</h3></div>
+    <section class="menu" id="menu">
+    <div class="content">
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/About1.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Tansha Kumari</h3><br>
+                <p>Final Year Student at NED<br>B.E (Computer Systems)<br>tansha_kumari@yahoo.com</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/about2.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Marium Wasim</h3><br>
+                <p>Final Year Student at NED<br>B.E (Computer Systems)<br>Mariumwasim2000@gmail.com</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/about3.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Umema Fayyaz</h3><br>
+                <p>Final Year Student at NED<br>B.E (Computer Systems)<br>Umemaf2000@gmail.com</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/about4.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Ramsha</h3><br>
+                <p>Final Year Student at NED<br>B.E (Computer Systems)<br>Ramsha.junejo@yahoo.com</p>
+            </div>
+        </div>
+        
+       <!-- <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="{% static 'mainapp/imgs/About1.jpg' %}">
+                </div>
+                <div class="text">
+                    <h3>Tansha Kumari</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="{% static 'mainapp/imgs/about2.jpg' %}">
+                </div>
+                <div class="text">
+                    <h3>Marium Wasim</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="{% static 'mainapp/imgs/about3.jpg' %}">
+                </div>
+                <div class="text">
+                    <h3>Umema Fayyaz</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="{% static 'mainapp/imgs/about4.jpg' %}">
+                </div>
+                <div class="text">
+                    <h3>Ramsha</h3>
+                </div>
+            </div>  -->
+        </div>
+</section>
+   

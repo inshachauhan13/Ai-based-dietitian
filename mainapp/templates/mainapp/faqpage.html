@@ -1,0 +1,158 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Nutrient Counselling & Diet Expert System</title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/nav2.css' %}"/>
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+</head>
+
+    
+<body>
+    
+<header>
+    <div class="container">
+        <img src="{% static 'mainapp/imgs/logo.png' %}" alt="NCDP." width="130" height="130" class="logo">
+        
+        <nav>
+            <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'food' %}">Food</a></li>
+            <li><a href="{% url 'nutrition' %}">Nutrition</a></li>
+            <li><a href="{% url 'experts' %}">Experts</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>   
+</header>
+<section>
+    <div class= "boxes">
+	  <p class="heading"> Frequently Asked Questions.</p>
+	  <div class= "faqs">
+	     <details>
+		    <summary> Importance of moisture in food.</summary>
+			<p class="text">Answer: Moisture content of the food material is important to consider the food is suitable before the consumption, because moisture content affects the physical, chemical aspects of food which relates with the freshness and stability for the storage of the food for a long period of time and the moisture content determine the actual quality of the food before consumption and to the subsequent processing in the food sector by the food producers.</p>
+		  </details>
+          <details>
+		  <summary> Importance of Protein in food.</summary>
+			<p class="text">Answer: Your body needs protein to stay healthy and work the way it should. More than 10,000 types are found in everything from your organs to your muscles and tissues to your bones, skin, and hair. Protein is also a critical part of the processes that fuel your energy and carry oxygen throughout your body in your blood.</p>
+		  </details>
+          <details>
+		    <summary> Importance of Lipids in food.</summary>
+			<p class="text">Answer:Lipids are needed to protect and insulate your body. To keep your internal body temperature regular, there is a layer of fats just beneath the skin that is made from lipids. Similarly, there is a layer of fats also around your vital organs that keeps them protected from injuries.</p>
+		 </details>
+         <details>
+		    <summary> Importance of carbohydrates in food</summary>
+			<p class="text">Answer:Carbohydrates are your body's main source of energy: They help fuel your brain, kidneys, heart muscles, and central nervous system. For instance, fiber is a carbohydrate that aids in digestion, helps you feel full, and keeps blood cholesterol levels in check.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Fibre in food</summary>
+			<p class="text">Answer:Fibre is important for our digestive health and regular bowel movements. Fibre also helps you feel fuller for longer, can improve cholesterol and blood sugar levels and can assist in preventing some diseases such as diabetes, heart disease and bowel cancer.</p>
+		 </details>
+          <details>
+		    <summary> Importance of Ash in food.</summary>
+			<p class="text">Answer:The ash content in foods is simply the burning away of organic content, leaving inorganic minerals. This helps determine the amount and type of minerals in food; important because the amount of minerals can determine physiochemical properties of foods, as well as retard the growth of microorganisms.</p>
+		 </details>
+          <details>
+		    <summary> Importance of Calcium in food.</summary>
+			<p class="text">Answer:Calcium is one of the most important minerals for the human body. It helps form and maintain healthy teeth and bones. A proper level of calcium in the body over a lifetime can help prevent osteoporosis (a medical condition in which the bones become brittle and fragile from loss of tissue, typically as a result of hormonal changes, or deficiency of calcium or vitamin D).</p>
+		 </details>
+          <details>
+		    <summary> Importance of Phosphorus in food</summary>
+			<p class="text">Answer:The main function of phosphorus is in the formation of bones and teeth. It plays an important role in how the body uses carbohydrates and fats. It is also needed for the body to make protein for the growth, maintenance, and repair of cells and tissues.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Iron in food</summary>
+			<p class="text">Answer:Iron is responsible for carrying oxygen to your muscles and brain. If you do not consume enough iron in your diet, the energy-using efficiency of your body will be affected. Iron helps improve focus and concentration level, reduces irritability, and enhances stamina.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Zinc in food.</summary>
+			<p class="text">Answer:Zinc is needed for the body's defensive (immune) system to properly work. It plays a role in cell division, cell growth, wound healing, and the breakdown of carbohydrates. Zinc is also needed for the senses of smell and taste. During pregnancy, infancy, and childhood the body needs zinc to grow and develop properly.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Iodine in food.</summary>
+			<p class="text">Answer:Iodine is a mineral found in some foods. The body needs iodine to make thyroid hormones. These hormones control the body's metabolism and many other important functions. The body also needs thyroid hormones for proper bone and brain development during pregnancy and infancy.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Thiamin in the food.</summary>
+			<p class="text">Answer: Thiamin (vitamin B1) helps the body's cells change carbohydrates into energy.Thiamin also plays a role in muscle contraction and conduction of nerve signals. Thiamin is naturally present in some foods, added to some food products, and available as a dietary supplement. This vitamin plays a critical role in energy metabolism and, therefore, in the growth, development, and function of cells.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Riboflavin in the food.</summary>
+			<p class="text">Answer: Riboflavin is a vitamin that is needed for growth and overall good health. Vitamin B2 well known as Riboflavin is one of the eight essential water-soluble vitamins. It plays a crucial role in the body and is needed for the healthy functioning of the eyes, ear, skin and red blood cells. It helps the body break down carbohydrates, proteins and fats to produce energy, and it allows oxygen to be used by the body.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Niacin in the food.</summary>
+			<p class="text">Answer: Niacin is a B vitamin that's made and used by your body to turn food into energy. It helps keep your nervous system, digestive system and skin healthy. Niacin (vitamin B-3) is often part of a daily multivitamin, but most people get enough niacin from the food they eat. As a supplement, niacin may help lower cholesterol, ease arthritis and boost brain function, among other benefits. </p>
+		 </details>
+           <details>
+		    <summary> Importance of Vitamin C in the food.</summary>
+			<p class="text">Answer: Vitamin C, also known as ascorbic acid, is necessary for the growth, development and repair of all body tissues. It's involved in many body functions, including formation of collagen, absorption of iron, the proper functioning of the immune system, wound healing, and the maintenance of cartilage, bones, and teeth.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Beta carotene (B-carotene) in the food.</summary>
+			<p class="text">Answer: Beta carotene is a potent antioxidant that may benefit your brain, skin, lung, and eye health. Health experts usually recommend eating a diet rich in fruits and vegetables, which are full of vitamins, minerals, and plant compounds that work together to support health over taking beta carotene supplements.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Vitamin A in the food.</summary>
+			<p class="text">Answer: Vitamin A is a fat-soluble vitamin that is naturally present in many foods. Vitamin A is important for normal vision, the immune system, and reproduction. Vitamin A also helps the heart, lungs, kidneys, and other organs work properly.</p>
+		 </details>
+         <details>
+		    <summary> Importance of Cholesterol in the food.</summary>
+			<p class="text">Answer: Cholesterol is a waxy substance. I Cholesterol circulates in the blood. Your body needs it to build cells and make vitamins and other hormones. Cholesterol is essential for your body to produce vitamin D. But too much cholesterol can pose a problem. Cholesterol comes from two sources. Your liver makes all the cholesterol you need. The remainder of the cholesterol in your body comes from foods from animals. For example, meat, poultry and dairy products all contain dietary cholesterol.</p>
+		 </details>
+		 <details>
+		    <summary> People with a body mass index (BMI) value of what or more are considered obese?</summary>
+			<p class="text">Answer: BMI values between 18.5 and 24.9 are considered to be a “normal” or “healthy” weight. BMI values between 25 and 29.9 are considered “overweight,” while BMI values of 30 and above are considered “obese.” BMIs above 25 are unhealthy and have been shown to increase the risk of certain chronic diseases. BMIs under 18.5 are considered “underweight.”</p>
+		 </details>
+		 <details>
+		    <summary> How can you benefit from a healthy diet?</summary>
+			<p class="text">Answer: Eating a healthy diet most obviously will assist you in losing weight, but healthy eating has many other benefits. Changing your diet can significantly improve your general health.Those who eat a balanced and healthy diet are generally considered to live longer lives because of these health benefits. Healthy eating can not only improve your body but can change your mood; making you feel more positive and more relaxed, particularly when combined with exercise. </p>
+		 </details>
+		 <details>
+		    <summary> Are foods that contain sugar unhealthy?</summary>
+			<p class="text">Answer:Sugar can be an enemy to a healthy diet, tasting so delicious in a variety of food and even hidden in foods that you wouldn’t suspect. Yet it is important to address the difference between natural and added sugars for a healthy diet. Sugars are carbs which provide a vital source of energy and nutrition, yet many popular foods have sugar added to them, this is when sugars become unhealthy and contribute significantly to weight gain, damaging your health diet.</p>
+		 </details>
+		 
+		 <details>
+		    <summary> How can you achieve a healthy diet?</summary>
+			<p class="text">Answer:The general rules for healthy eating is that natural foods are generally healthy, and if a product has been overly processed it may contain unhealthy ingredient such as added sugars or ‘bad’ fats.The key to a healthy diet is balance and ensuring the correct amounts of each dietary element. Your diet should include a range of carbs, proteins, vitamins and mineral, fats and dairy, which in appropriate amounts can help you feel the health benefits that follow with a healthy diet.</p>
+		 </details>
+		 <details>
+		    <summary>Should Teenagers Take A Vitamin Supplement To Meet Their Energy Level Up? </summary>
+			<p class="text">Answer: It is useless to give a vitamin supplement unless the teenager is on a low-calorie diet. It is always preferable to take vitamin organically from fruits, vegetables and healthy fats.</p>
+		 </details>
+		 <details>
+		    <summary>Explain What Is BMR?</summary>
+			<p class="text">Answer: BMR means Basal Metabolic Rate; it is an energy expressed in calories that the body requires to keep it functioning at rest.</p>
+		 </details>
+		 <details>
+		    <summary>Tell Us How Much Water Should An Individual Consumer Per Day?</summary>
+			<p class="text">Answer: Women: 9 Cups ( 2.2 liters) of water per day. <br> Men: 13 cups (3 liters) of water per day. </p>
+		 </details>
+		 <details>
+		    <summary>Which Egg Is More Nutritious White Or Brown?</summary>
+			<p class="text">Answer: Both eggs has same nutritional value; they are rich in protein, vitamin and most important nutrient choline which is responsible for brain development and function. One egg may provide half of your daily requirement of choline.</p>
+		 </details>
+		 <details>
+		    <summary>How many calories do I need to burn to lose a pound of weight?</summary>
+			<p class="text">Answer:You need to burn off 3,500 calories more than you take in to lose 1 pound. This translates into a reduction of 500 calories per day to lose 1 pound in a week.This can be achieved by eating fewer calories or using up more through physical activity.</p>
+		 </details>
+		 <details>
+		    <summary>When I eat more than I need what happens to the extra calories?</summary>
+			<p class="text">Answer: Consuming extra calories results in an accumulation of stored body fat and weight gain. This is true whether the excess calories come from protein, fat, carbohydrate, or alcohol.</p>
+		 </details>
+		 <details>
+		    <summary>What is the most abundant mineral in the body?</summary>
+			<p class="text">Answer: Calcium is the most abundant mineral in the body.</p>
+		 </details>
+		 <details>
+		    <summary>Should I avoid carbs?</summary>
+			<p class="text">Answer: Research shows that carbohydrates do not contribute to weight gain, but overeating does. Eat a balance of carbohydrates, proteins, and fats for best health—minimally processed versions are best.</p>
+		 </details> 
+	  </div>
+	</div>
+</section>

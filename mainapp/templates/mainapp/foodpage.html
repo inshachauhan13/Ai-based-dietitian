@@ -1,0 +1,101 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Nutrient Counselling & Diet Planner</title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static 'mainapp/css/nav.css' %}"/>
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+</head>
+
+    
+<body>
+    
+<header>
+    <div class="container">
+        <img src="{% static 'mainapp/imgs/logo.png' %}" alt="NCDP." width="130" height="130" class="logo">
+        <nav>
+            <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'food' %}">Food</a></li>
+            <li><a href="{% url 'nutrition' %}">Nutrition</a></li>
+            <li><a href="{% url 'experts' %}">Experts</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>   
+</header>
+<section class="menu" id="menu">
+    <div class="title">
+        <h2 class="titleText"><span>O</span>ur <span>F</span>ood <span>C</span>ollection</h2>
+        <p>Eating a healthy diet is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love. Rather, it’s about feeling great, having more energy, improving your health, and boosting your mood.<br>Healthy eating doesn’t have to be overly complicated. If you feel overwhelmed by all the conflicting nutrition and diet advice out there, you’re not alone. It seems that for every expert who tells you a certain food is good for you, you’ll find another saying exactly the opposite. The truth is that while some specific foods or nutrients have been shown to have a beneficial effect on mood, it’s your overall dietary pattern that is most important. The cornerstone of a healthy diet should be to replace processed food with real food whenever possible. Eating food that is as close as possible to the way nature made it can make a huge difference to the way you think, look, and feel.</p>
+    </div>
+    <div class="content">
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/healthy-spinach-salad.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Healthy Spinach Salad</h3><br><h4>Ingredients</h4>
+                <p>11 oz box of organic baby spinach (pre-washed)<br>4 hard boiled eggs (sliced)<br>1 cup grape tomatoes (cut in halves)<br>1 long English cucumber (sliced)<br>2 cups mushrooms (sliced)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/Lemony-Lentil-Soup-Recipe.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Lemony Lentil Soup</h3><br><h4>Ingredients</h4>
+                <p>1 tablespoon olive oil<br>1 medium white onion, peeled and diced<br>2 medium carrots, diced<br>5 cloves garlic, peeled and minced<br>6 cups vegetable stock (or chicken stock)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/rice.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Jeweled Rice Pulao</h3><br><h4>Ingredients</h4>
+                <p>4 cups cooked long grain white, brown, or wild rice<br>2 teaspoons extra-virgin olive oil<br>1 bunch scallions (white and green parts, chopped)<br>3 cloves garlic (minced)<br>⅓ cup toasted (chopped pistachios)</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/Healthy-Mocha-Mousse.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Healthy Mocha Mousse</h3><br><h4>Ingredients</h4>
+                <p>one 14oz container Extra Firm Tofu<br>½ cup Unsweetened Light Coconut Milk ((canned))<br>1 tsp Vanilla Extract<br>105g (¾ cup) Powdered Erythritol ((or powdered sweetener of choice))<br>¼ tsp Salt</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/strawberry.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Strawberries On A Cloud</h3><br><h4>Ingredients</h4>
+                <p>1 Strawberry, large fresh<br>1 Reddi-wip original dairy whipped topping<br>3 Vanilla wafers</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/beetroot-roti.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Healthy Beetroot Chapati</h3><br><h4>Ingredients</h4>
+                <p>½ cup Beetroot (peeled and finely chopped or grated)<br>2 + 3 tablespoons Water<br>1 cup Whole wheat flour (Chapati atta) (+ more for dusting to roll roti)<br>Salt (to taste)<br>1 teaspoon Oil</p>
+            </div>
+        </div>
+        <div class="block">
+            <div class="imgBx">
+                <img src="{% static 'mainapp/imgs/Turmeric-Golden-Milk.jpg' %}">
+            </div>
+            <div class="text">
+                <h3>Turmeric Golden Milk</h3><br><h4>Ingredients</h4>
+                <p>2 ½ cups unsweetened and full fat almond or coconut milk<br>1 stick cinnamon or 1/4 teaspoon ground cinnamon (more as garnish at the end)<br>2 inches fresh turmeric (sliced or 1 ½ teaspoon ground turmeric spice)<br>1 inch fresh ginger (sliced or ½ teaspoon ground ginger)<br>1 tablespoon coconut oil</p>
+            </div>
+        </div>
+    </div>  
+</section>

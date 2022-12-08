@@ -1,0 +1,79 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--<link rel="stylesheet" type="text/css" href="{% static 'mainapp/fontawesome.min.css' %}">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Nutrient Counselling & Diet Planner</title>
+    <link rel="stylesheet" href="{% static 'mainapp/css/nav.css' %}"/>
+</head>
+    
+<body style="background:url({% static 'mainapp/imgs/image2.jpg' %});background-size: cover;" class="bga">
+  
+<header>
+    <div class="container">
+                <img src="{% static 'mainapp/imgs/logo.png' %}" alt="NCDP." width="130" height="130" class="logo">
+
+        <nav>
+            <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'food' %}">Food</a></li>
+            <li><a href="{% url 'nutrition' %}">Nutrition</a></li>
+            <li><a href="{% url 'experts' %}">Experts</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>   
+</header>
+    
+<div style="margin-top: 150px;"></div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+            <div class="card text-center">
+              <div class="card-header">
+                Details
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Follow Diet Below</h5>
+                <!-- <p class="card-text">BMI : {{bmi}} ({{tag_bmi}})</p>  -->
+                <br><a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI : {{bmi}}</a>
+                <p class="card-text">Body Status : {{tag_bmi}}</p>
+                <a href="https://en.wikipedia.org/wiki/Basal_metabolic_rate">BMR : {{bmr}}</a>
+               <!-- <p class="card-text">BMR : {{bmr}}</p> -->              
+                <p class="card-text">Calories to maintain weight: {{ctm}}</p>
+                <p class="card-text">Diet plan to follow : </p>
+                <div>
+                {{dfd|safe}}    
+                </div>
+                <div style="margin-top: 50px;">
+                <h3>{{heading}}</h3>
+                {{dfd2|safe}}    
+                </div>
+                
+                
+
+              </div>
+              <div class="card-footer text-muted">
+                
+              </div>
+            </div>
+    </div>
+    <div class="col-md-2"></div>  
+</div>
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
+
+
+

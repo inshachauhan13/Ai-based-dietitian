@@ -1,0 +1,66 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Nutrient Counselling & Diet Planner</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--<link rel="stylesheet" type="text/css" href="{% static 'mainapp/fontawesome.min.css' %}">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'mainapp/css/style.css' %}"/>
+
+<!--    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+</head>
+<body style="background:url({% static 'mainapp/imgs/bg1.jpeg' %});background-size: cover;" class="bga">
+<header>
+    <div class="container">
+        <img src="{% static 'mainapp/imgs/logo.png' %}" alt="NCDP." width="130" height="130" class="logo">
+        <nav>
+            <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'food' %}">Food</a></li>
+            <li><a href="{% url 'nutrition' %}">Nutrition</a></li>
+            <li><a href="{% url 'experts' %}">Experts</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>   
+</header>
+    <div style="height: 350px;">
+        
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+             <div class="col-md-6">
+                  <div class="title">
+                    <h2 class="titleText"><span>S</span>earch <span>N</span>utrients <span>V</span>alues </h2>
+                 </div>
+                  <form action="{% url 'search-bar-down' %}" method="get" class="search-bar">
+                        <input type="search" name="results" id="results" placeholder="&nbsp;&nbsp;Provide Name to check nutritions" required>
+                        <button type="submit" class="search-btn"></button>
+                  </form>
+              </div>
+        <div class="col-md-3"></div>
+    </div>
+    
+<script type="text/javascript">
+        window.addEventListener('scroll', funtion(){ 
+        const header = document.querySelector('header');
+        header.classlist.toggle("sticky", window.scrollY > 0);
+     });
+    
+</script>
+    
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</body>
+
+</html>
